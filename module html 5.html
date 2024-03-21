@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module (HTML5) – 3 </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h6{
+            font-size: 20px;
+            margin: 10px;
+        }
+        p{
+            font-size: 17px;
+            margin: 10px;
+        
+        }
+    </style>
+</head>
+<body>
+    <h6>Q1. What are the new tags added in HTML5?  </h6>
+    <p>Ans. HTML5 introduced several new tags that were not present in previous versions of HTML. Some of the new tags added in HTML5 include:</p>
+    <p><b>1. header: </b> Defines a header section for a document or a section.</p>
+    <p><b>2. footer:</b>Defines a footer section for a document or a section.</p>
+    <p><b>3. nav:</b>Defines a set of navigation links.</p>
+    <p><b>4. article:</b> Represents an independent piece of content that can stand alone, such as a blog post or a news article.</p>
+    <p><b>5. section:</b>Defines a section in a document, such as chapters, headers, footers, or any other thematic grouping.</p>
+    <p><b>6. aside:</b>Represents content that is tangentially related to the content around it, such as sidebars or pull quotes.</p>
+    <p><b>7. main:</b>Specifies the main content of a document.</p>
+    <p><b>8. figure:</b>Represents self-contained content, such as images, diagrams, illustrations, code snippets, etc., along with an optional caption. &lt; figcaption &gt;</p>
+    <p><b>9. figcaption:</b>Represents a caption or legend for a &lt; figure &gt; element.</p>
+    <p><b>10. video:</b> Embeds a video into an HTML document.</p>
+    <p><b>11. audio:</b>Embeds audio content into an HTML document.</p>
+    <p><b>12. canvas:</b> Provides a container for graphics, animations, or other visual images using JavaScript.</p>
+    <p><b>13. progress:</b>Represents the progress of a task or process, typically displayed as a progress bar.</p>
+    <p><b>14. meter</b>Represents a scalar measurement within a known range, such as disk usage or completion percentage.</p>
+    <p><b>15. time:</b>Represents a specific period in time or a duration, with optional formatting and machine-readable data.</p>
+    <p><b>16. datalist:</b> Provides a list of predefined options for input controls like &lt; input &gt; or  &lt;  textarea &gt;</p>
+    <p><b>17. details:</b>Represents a disclosure widget from which the user can obtain additional information or controls.</p>
+    <p><b>18. summary:</b>Represents a summary, caption, or legend for a &lt; details &gt;  element.</p>
+    <p><b>19. dialog:</b>Represents a dialog box or window.</p>
+
+    <h6>Q2. How to embed audio and video in a webpage?  </h6>
+    <p>To embed audio and video in a webpage using HTML5, you can use the &lt; audio &gt; and &lt; video &gt; tags, respectively. Here's how you can do it:</p>
+    <p><b>1. Embedding Audio:</b></p>
+    <p>Use the &lt; audio &gt; tag to embed audio content in your webpage. Here's an example:</p>
+    <p>&lt; audio controls &gt;
+        &lt; source src="audio_file.mp3" type="audio/mpeg" &gt;
+        Your browser does not support the audio element.
+        &lt; /audio &gt;</p>
+        <p><b>controls:</b> Adds playback controls (play, pause, volume, etc.) to the audio player.</p>
+        <p><b>&lt; source src="audio_file.mp3" type="audio/mpeg" &gt;: </b></p>
+        <p>Specifies the audio file <b> (audio_file.mp3) </b> and its MIME type <b> (audio/mpeg </b> in this case). You can add multiple &lt; source &gt; elements to provide alternative audio formats for better compatibility across browsers.</p>
+        <p>Replace <b> "audio_file.mp3" </b>with the actual path to your audio file.</p>
+        <p><b>Embedding Video:</b>Use the &lt; video &gt; tag to embed video content in your webpage. Here's an example:</p>
+        <p>&lt; video controls width="640" height="360" &gt; <br>
+            &lt; source src="video_file.mp4" type="video/mp4"&gt; <br>
+            Your browser does not support the video element. <br>
+            &lt; /video &gt;</p>
+            <p><b>controls:</b>Adds playback controls (play, pause, volume, etc.) to the video player.</p>
+            <p><b>width="640" height="360":</b>Specifies the width and height of the video player.</p>
+            <p><b>&lt; source src="video_file.mp4" type="video/mp4" &gt;:</b>Specifies the video file <b>(video_file.mp4)</b> and its MIME type <b> (video/mp4 </b> in this case). Again, you can add multiple &lt; source &gt; elements for different video formats.</p>
+            <p>Replace <b> "video_file.mp4" </b>with the actual path to your video file.</p>
+            <p><b>Fallback Content:</b></p>
+            <p>The text "Your browser does not support the audio/video element." inside the &lt; audio &gt; and &lt; video &gt; tags is the fallback content. It will be displayed if the user's browser does not support the audio or video element.</p>
+            <h6>Q3. Semantic element in HTML5?  </h6>
+            <p>Ans. Semantic elements in HTML5 are tags that provide meaning and structure to the content they enclose. These elements help browsers, search engines, screen readers, and other tools understand the purpose and context of the content, improving accessibility, SEO, and overall clarity of the document. Some common semantic elements in HTML5 include:</p>
+            <p><b>1. header:</b>Represents introductory content at the beginning of a section or a page.</p>
+            <p><b>2. nav: </b>Defines a set of navigation links.</p>
+            <p><b>3. main:</b> Specifies the main content of a document.</p>
+            <p><b>4. article:</b> Represents an independent piece of content, such as a blog post or a news article.</p>
+            <p><b>5. section:</b>Defines a section in a document, such as chapters, headers, footers, or any other thematic grouping.</p>
+            <p><b>6. aside:</b>Represents content that is tangentially related to the content around it, such as sidebars or pull quotes.</p>
+            <p><b>7. footer:</b>Defines a footer section for a document or a section.</p>
+            <p><b>8. figure:</b>Represents self-contained content, such as images, diagrams, illustrations, code snippets, etc., along with an optional caption. &lt; figcaption &gt;</p>
+           <p><b>9. figcaption:</b>Represents a caption or legend for a &lt; figure &gt; element.</p>
+           <p><b>10. time:</b>Represents a specific period in time or a duration, with optional formatting and machine-readable data.</p>
+           <p><b>11. mark:</b>Highlights a portion of text for reference or emphasis.</p>
+           <p><b>12. progress:</b>Represents the progress of a task or process, typically displayed as a progress bar.</p>
+           <p><b>13. meter:</b>Represents a scalar measurement within a known range, such as disk usage or completion percentage.</p>
+           <p><b>14. details:</b>Represents a disclosure widget from which the user can obtain additional information or controls.</p>
+           <p><b>15. summary:</b>Represents a summary, caption, or legend for a &lt; details &gt; element.</p>
+
+           <h6>Q4. Canvas and SVG tags  </h6>
+           <p>Ans. 
+            Both the &lt; canvas &gt; and &lt; svg &gt; tags are used for creating graphics and visual elements in HTML, but they have different approaches and purposes: </p>
+            <p><b>1. canvas Tag:</b></p>
+            <p>The &lt; canvas &gt; tag is used for drawing graphics, animations, and interactive content using JavaScript.</p>
+            <p>It provides a bitmap-based drawing surface that allows you to manipulate pixels directly through JavaScript.</p>
+            <p>The content drawn on a &lt; canvas &gt; is not part of the document's DOM structure, which means it cannot be accessed or manipulated using standard DOM methods.</p>
+            <p>Example of a canvas tag:</p>
+            <p>&lt; canvas id="myCanvas" width="400" height="200" &gt; &lt;/canvas&gt;</p>
+            <p>In this example, id="myCanvas" provides an identifier for JavaScript to target this canvas element, and width="400" height="200" sets the dimensions of the canvas.</p>
+            <p><b>svg Tag:</b></p>
+            <p>The &lt; svg &gt; tag is used for creating scalable vector graphics (SVG) directly within HTML.</p>
+            <p>SVG graphics are vector-based, meaning they can be scaled without losing quality and are suitable for illustrations, diagrams, icons, and more.</p>
+            <p>SVG elements are part of the document's DOM structure, allowing them to be styled and manipulated using CSS and JavaScript.</p>
+            <p>Example of an svg tag:</p>
+            <p>&lt; svg width="400" height="200">
+                &lt; circle cx="100" cy="100" r="50" fill="red" / &gt;
+                &lt; rect x="200" y="50" width="100" height="100" fill="blue" /&gt;
+              &lt; /svg &gt;</p>
+
+</html>
